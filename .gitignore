@@ -1,0 +1,8 @@
+/bootloader
+/zephyr
+/modules
+/tools
+.west
+.cache
+build
+compile_commands.json
