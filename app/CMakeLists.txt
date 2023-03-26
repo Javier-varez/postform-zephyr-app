@@ -4,4 +4,6 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 project(app LANGUAGES C CXX VERSION 1.0.0)
 
-target_sources(app PRIVATE src/main.cpp)
+target_sources(app PRIVATE
+    src/main.cpp
+    src/postform_config.cpp)

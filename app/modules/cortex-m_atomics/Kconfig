@@ -1,0 +1,5 @@
+menuconfig CORTEX_M_ATOMIC_POLYFILL
+	bool "Cortex M0/M0+ Atomic polyfill"
+    depends on STD_CPP20
+    help
+      Support for atomic operations for cortex m0 and cortex m0+

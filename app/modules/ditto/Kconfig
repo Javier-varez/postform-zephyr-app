@@ -1,0 +1,5 @@
+menuconfig DITTO
+	bool "Ditto library"
+    depends on STD_CPP20
+    help
+      Add Ditto support to your zephyr application

@@ -1,0 +1,5 @@
+menuconfig POSTFORM
+	bool "Postform library"
+    depends on STD_CPP20 && DITTO
+    help
+      Add Postform support to your zephyr application

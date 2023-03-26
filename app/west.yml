@@ -2,9 +2,23 @@ manifest:
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
+    - name: javier-varez
+      url-base: https://github.com/javier-varez
 
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
       revision: v3.3.0
       import: true
+    - name: postform
+      remote: javier-varez
+      revision: feat/zephyr-module
+      path: modules/lib/postform
+    - name: ditto
+      remote: javier-varez
+      revision: feat/zephyr-module
+      path: modules/lib/ditto
+    - name: cortex-m_atomics
+      remote: javier-varez
+      revision: feat/zephyr-module
+      path: modules/lib/cortex-m_atomics
