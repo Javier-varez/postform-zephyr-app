@@ -1,3 +1,5 @@
+#include <zephyr/kernel.h>
+
 #include <array>
 #include <span>
 
@@ -39,10 +41,11 @@ void assert_failed(const char* condition, int line, const char* file) {
 
 }  // namespace Ditto
 int main() {
-  LOG_ERROR(&logger, "Nice!");
+  uint32_t count{};
+
   while (true) {
-    volatile int a = 0;
-    static_cast<void>(a);
+    LOG_ERROR(&logger, "Count is %u", count++);
+    k_sleep(K_SECONDS(1));
   }
   return 0;
 }
